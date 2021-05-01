@@ -2,6 +2,9 @@
 
 module.exports = function (environment) {
   let ENV = {
+    apollo: {
+      apiURL: 'http://127.0.0.1:3001/graphql'
+    },
     modulePrefix: 'leit-ember-apollo',
     environment,
     rootURL: '/',

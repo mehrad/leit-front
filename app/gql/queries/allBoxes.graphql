@@ -1,0 +1,12 @@
+query Boxes {
+  boxes {
+    id
+    title
+    user {
+      email
+    }
+    flashcards {
+      question
+    }
+  }
+}

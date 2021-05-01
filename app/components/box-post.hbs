@@ -1,0 +1,8 @@
+<div>
+  <div>({{@box.title}})</div>
+  <div>
+    {{#each @box.flashcards as |flashcard|}}
+      {{flashcard.question}}
+    {{/each}}
+  </div>
+</div>
