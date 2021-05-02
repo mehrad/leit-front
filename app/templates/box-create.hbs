@@ -1,0 +1,10 @@
+{{page-title "BoxCreate"}}
+<div>
+  <form class='flex flex-column mt3' {{action 'createBox' on='submit'}}>
+    {{input class='mb2' type='text' placeholder='title' value=title}}
+    {{input class='mb2' type='text' placeholder='A description for the Box' value=description}}
+    <div class='flex'>
+      {{input type='submit' value='submit'}}
+    </div>
+  </form>
+</div>

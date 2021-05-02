@@ -1,0 +1,11 @@
+mutation CreateBox($description: String!, $title: String!) {
+  addBox(input: {title: $title, desc:$description}) {
+  box {
+    id
+    title
+    desc
+  }
+  success
+  errors
+  }
+}
