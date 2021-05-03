@@ -2,7 +2,7 @@
   <div class='flex flex-fixed black'>
     <div class='fw7 mr1'>Leit damn it</div>
     {{#link-to 'boxes' class='ml1 no-underline black'}}list{{/link-to}}
-    {{#if true}}
+    {{#if userLoggedIn}}
       <div class='flex'>
         <div class='ml1'>|</div>
         {{#link-to 'box-create' class='ml1 no-underline black'}}create{{/link-to}}
@@ -10,7 +10,7 @@
     {{/if}}
   </div>
   <div class='flex flex-fixed'>
-    {{#if true}}
+    {{#if userLoggedIn}}
       <div class='ml1 pointer black' {{action 'logout'}}>
         logout
       </div>

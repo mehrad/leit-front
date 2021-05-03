@@ -13,5 +13,5 @@ export default Component.extend({
 
   auth: service(),
 
-  userLoggedIn: true
+  userLoggedIn: computed.oneWay('auth.isLoggedIn')
 });

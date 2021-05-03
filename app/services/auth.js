@@ -12,11 +12,10 @@ export default Service.extend( {
     userId: null,
     apollo: service(),
 
-    isLoggedIn() {
-        console.log(this.get('userId'));
+    isLoggedIn: computed('userId', function() {
         return !!this.get('userId');
-    },
-
+      }),
+      
     loginOrSignUp(state, name, email, password) {
         let variables;
         return new RSVP.Promise((resolve, reject) => {
